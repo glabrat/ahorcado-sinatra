@@ -1,7 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/flash'
 require './lib/hangperson_lib.rb'
-require 'slim/logic_less'
+require 'haml'
 
 class HangpersonApp < Sinatra::Base
 

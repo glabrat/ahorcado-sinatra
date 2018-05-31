@@ -4,6 +4,7 @@ ruby '2.3.0'
 gem 'sinatra', '>= 1.4'
 gem 'sinatra-flash', '0.3.0'
 gem 'nokogiri', '>= 1.8'
+gem 'haml'
 
 group :development, :test do
   gem 'rspec'
