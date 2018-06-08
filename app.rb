@@ -17,6 +17,10 @@ class HangpersonApp < Sinatra::Base
   after do
     session[:game] = @game
   end
+
+  post '/create' do
+    redirect '/game'
+  end
   
   get '/' do
     redirect '/new'
@@ -24,6 +28,10 @@ class HangpersonApp < Sinatra::Base
   
   get '/new' do
     haml :new
+  end
+
+  get '/game' do
+    haml :create
   end
 
 end

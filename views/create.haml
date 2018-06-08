@@ -1,0 +1,7 @@
+%h2 Guess a letter / Adivina una letra
+
+%form{ :action => "/guess", :method => "post"}
+    %label{:for => "guess"} Words languague/Lenguaje de las palabras:
+    %input{:type => "text", :name => "guess", :size => "1", :autocomplete => "off"}
+    %label{:for => "submit"} Words languague/Lenguaje de las palabras:
+    %input{:type => "submit", :name => "submit", :value => "Submit"}
