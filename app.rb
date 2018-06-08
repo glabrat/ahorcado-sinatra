@@ -23,11 +23,7 @@ class HangpersonApp < Sinatra::Base
   end
   
   get '/new' do
-    erb :new
-  end
-
-  get '/test' do
     haml :new
   end
-  
+
 end
